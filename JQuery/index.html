@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-left my-4">My Shopping Cart</h1>
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-responsive">
+            <thead>
+              <tr>
+                <th scope="subHeader">Product</th>
+                <th scope="subHeader">Price</th>
+                <th scope="subHeader">Quantity</th>
+                <th scope="subHeader">Sub-total</th>
+                <th scope="subHeader"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="productName">Salmon</td>
+                <td class="productPrice">50</td>
+                <td class="productQuantity">2</td>
+                <td class="productSubTotal"></td>
+                <td><button class="btn btn-light btn-sm remove">remove</button></td>
+              </tr>
+              <tr>
+                <td class="productName">Eggs</td>
+                <td class="productPrice">25</td>
+                <td class="productQuantity">5</td>
+                <td class="productSubTotal"></td>
+                <td><button class="btn btn-light btn-sm remove">remove</button></td>
+              </tr>
+              <tr>
+                <td class="productName">Milk</td>
+                <td class="productPrice">10</td>
+                <td class="productQuantity">3</td>
+                <td class="productSubTotal"></td>
+                <td><button class="btn btn-light btn-sm remove">remove</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="col-12 col-md-6">
+            <h3>Shopping Cart Total: $ <span id="shoppingCartTotal"></span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
