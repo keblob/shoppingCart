@@ -25,37 +25,43 @@
           <table class="table table-responsive">
             <thead>
               <tr>
-                <th scope="subHeader">Product</th>
-                <th scope="subHeader">Price</th>
-                <th scope="subHeader">Quantity</th>
-                <th scope="subHeader">Sub-total</th>
-                <th scope="subHeader"></th>
+                <th scope="col">Product</th>
+                <th scope="col">Price ($)</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Sub-total ($)</th>
+                <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td class="productName">Salmon</td>
-                <td class="productPrice">50</td>
-                <td class="productQuantity">2</td>
+                <td class="productPrice"><input type="number" value="50" /></td>
+                <td class="productQuantity"><input type="number" value="2" /></td>
                 <td class="productSubTotal"></td>
                 <td><button class="btn btn-light btn-sm remove">remove</button></td>
               </tr>
               <tr>
                 <td class="productName">Eggs</td>
-                <td class="productPrice">25</td>
-                <td class="productQuantity">5</td>
+                <td class="productPrice"><input type="number" value="25" /></td>
+                <td class="productQuantity"><input type="number" value="5" /></td>
                 <td class="productSubTotal"></td>
                 <td><button class="btn btn-light btn-sm remove">remove</button></td>
               </tr>
               <tr>
                 <td class="productName">Milk</td>
-                <td class="productPrice">10</td>
-                <td class="productQuantity">3</td>
+                <td class="productPrice"><input type="number" value="10" /></td>
+                <td class="productQuantity"><input type="number" value="3" /></td>
                 <td class="productSubTotal"></td>
                 <td><button class="btn btn-light btn-sm remove">remove</button></td>
               </tr>
             </tbody>
           </table>
+          <form class="col-12 mt-2 mb-4" id="addGrocery">
+            <input class="mx-2" name="productName" type="text" placeholder="Product" required/>
+            <input class="mx-2" name="productPrice" type="number" placeholder="Cost"/>
+            <input class="mx-2" name="productQuantity" type="number" placeholder="Quantity"/>
+            <button class="btn btn-primary btn-sm">add</button>
+          </form>
           <div class="col-12 col-md-6">
             <h3>Shopping Cart Total: $ <span id="shoppingCartTotal"></span></h3>
           </div>
